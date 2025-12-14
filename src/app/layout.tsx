@@ -3,10 +3,16 @@ import './globals.css';
 
 import { SidebarProvider } from '@/context/SidebarContext';
 import { ThemeProvider } from '@/context/ThemeContext';
+import { Metadata } from 'next';
 
 const outfit = Outfit({
   subsets: ["latin"],
 });
+
+export const metadata: Metadata = {
+  title: 'Hospital Booking Dashboard',
+  description: 'A modern hospital booking dashboard built with Next.js',
+};
 
 export default function RootLayout({
   children,
